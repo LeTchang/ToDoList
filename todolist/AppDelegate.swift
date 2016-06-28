@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import RealmSwift
+
+// MARK: - Global needed
+let myRealm = try! Realm()
 
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?

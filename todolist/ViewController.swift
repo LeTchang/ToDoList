@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -24,6 +25,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.didReceiveMemoryWarning()
     }
     
+    // MARK: - Realm functions
+    func updateRealm() {
+        
+    }
+    
     // MARK: - TableView functions
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tasks.list.count
@@ -39,6 +45,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        performSegueWithIdentifier("ContentSegue", sender: nil)
     }
     
     // MARK: - IBAction functions
@@ -55,9 +62,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             self.tasks.list.append(new)
             print(alert.textFields![0].text!)
             self.listTableView.reloadData()
+//            try! myRealm.write {
+//                myRealm.add(self.tasks)
+//            }
         }))
         alert.view.setNeedsLayout()
         self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    // MARK: - Segue
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
     }
 }
 
