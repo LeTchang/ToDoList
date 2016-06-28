@@ -15,6 +15,9 @@
 		9306BC6F1D1944F600CF45B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9306BC6D1D1944F600CF45B0 /* LaunchScreen.storyboard */; };
 		9306BC7A1D1944F600CF45B0 /* todolistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9306BC791D1944F600CF45B0 /* todolistTests.swift */; };
 		9306BC851D1944F600CF45B0 /* todolistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9306BC841D1944F600CF45B0 /* todolistUITests.swift */; };
+		932997811D2162A500E4F8D9 /* mainList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932997801D2162A500E4F8D9 /* mainList.swift */; };
+		932997831D2162C500E4F8D9 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932997821D2162C500E4F8D9 /* Content.swift */; };
+		932997851D2168C500E4F8D9 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932997841D2168C500E4F8D9 /* CustomCell.swift */; };
 		9925C2878DFB1FB25850F606 /* Pods_todolistUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73514587F759167910C61D4D /* Pods_todolistUITests.framework */; };
 		D6A064E8B9F249FFEFFE0336 /* Pods_todolistTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3490A666D9E5FD2947026E25 /* Pods_todolistTests.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +59,9 @@
 		9306BC801D1944F600CF45B0 /* todolistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = todolistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9306BC841D1944F600CF45B0 /* todolistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todolistUITests.swift; sourceTree = "<group>"; };
 		9306BC861D1944F600CF45B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		932997801D2162A500E4F8D9 /* mainList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainList.swift; sourceTree = "<group>"; };
+		932997821D2162C500E4F8D9 /* Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		932997841D2168C500E4F8D9 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		B70DDF7669D0AAD9FBD07C44 /* Pods-todolistTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todolistTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-todolistTests/Pods-todolistTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C41833CF7EE46EBCB1F04CD5 /* Pods-todolistUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todolistUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-todolistUITests/Pods-todolistUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CD9FB8E7992CC9D652C38E9E /* Pods-todolistUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todolistUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-todolistUITests/Pods-todolistUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +135,9 @@
 			children = (
 				9306BC641D1944F600CF45B0 /* AppDelegate.swift */,
 				9306BC661D1944F600CF45B0 /* ViewController.swift */,
+				932997821D2162C500E4F8D9 /* Content.swift */,
+				932997801D2162A500E4F8D9 /* mainList.swift */,
+				932997841D2168C500E4F8D9 /* CustomCell.swift */,
 				9306BC681D1944F600CF45B0 /* Main.storyboard */,
 				9306BC6B1D1944F600CF45B0 /* Assets.xcassets */,
 				9306BC6D1D1944F600CF45B0 /* LaunchScreen.storyboard */,
@@ -427,8 +436,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				932997811D2162A500E4F8D9 /* mainList.swift in Sources */,
 				9306BC671D1944F600CF45B0 /* ViewController.swift in Sources */,
+				932997851D2168C500E4F8D9 /* CustomCell.swift in Sources */,
 				9306BC651D1944F600CF45B0 /* AppDelegate.swift in Sources */,
+				932997831D2162C500E4F8D9 /* Content.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
